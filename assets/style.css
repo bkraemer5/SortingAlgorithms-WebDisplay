@@ -1,0 +1,17 @@
+body {
+	margin: auto;
+	margin-top: 75px;
+	background: #e6f7ff;
+	text-align: center;
+	font-family: sans-serif;
+}
+h1 {
+	color: #66cfff;
+}
+h4 {
+	color: #66cfff;
+}
+canvas {
+	background: #ffffff;
+	margin-bottom: 75px;
+}
