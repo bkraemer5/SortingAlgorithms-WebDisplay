@@ -11,11 +11,14 @@
 <h1> S o r t i n g &nbsp&nbsp A l g o r i t h m &nbsp&nbsp R a c e </h1>
 <h4>time-stamp: ( 2019-12-07 ) - Brittany Kraemer</h4>
 
-<canvas id="grid" width="900" height="730"></canvas>
+<canvas id="grid" width="900" height="1500"></canvas>
 
 </body>
 
 <script src="assets/js_functions.js"></script>
+<script src="assets/mergesort.js"></script>
+<script src="assets/quicksort.js"></script>
+<script src="assets/bubblesort.js"></script>
 <script>
 	var canvas = document.getElementById( "grid" );
 	var context = canvas.getContext( "2d" );
@@ -48,7 +51,7 @@
 
 	arraylist = [list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14, list15, list16, list17, list18, list19, list20, list21, list22, list23, list24];
 
-	var random = Math.floor(Math.random() * -23 + 23);
+	random = Math.floor(Math.random() * -23 + 23);
 
 	drawWord(context, "MERGE SORT", 60, 30, "#009de6");
 	drawWord(context, "QUICK SORT", 375, 30, "#009de6");
@@ -57,5 +60,9 @@
 	printList(context, arraylist[random], 10, 75, "#009de6");
 	printList(context, arraylist[random], 320, 75, "#009de6");
 	printList(context, arraylist[random], 650, 75, "#009de6");
+	
+	bubblesort(arraylist[random], 95, context);
+	quicksort(arraylist[random], 0, 11, context, 95);
+	mergesort(arraylist[random], context, 95, arraylist[random]);
 
 	</script>
